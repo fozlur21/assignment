@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Blog post</title>
+</head>
+
+<body>
+    <div class="mt-4 px-8">
+        <h5 class="text-xl text-emerald-700">
+            Question-1: What is DOM and what is the purpose of DOM?
+        </h5>
+        <p class="text-lime-700">
+            What is DOM:
+        </p>
+        <p class="text-neutral-900 px-10">
+            The Document Object Model (DOM), a programming interface,
+            represents the hierarchy of
+            an HTML document's components as a tree-like hierarchical structure. It enables programmers to use
+            scripting
+            languages like JavaScript to dynamically change the information, structure, and style of a web page.
+        </p>
+        <p class="text-lime-700 light">
+            The purpose of DOM:
+        </p>
+        <p class="text-neutral-900 px-10">
+            The DOM is designed to give programmes and scripts a platform- and language-neutral means of accessing
+            and
+            updating the content and structure of web pages. Being a tree of nodes and objects that can be accessed
+            and
+            modified using a standardised set of methods and properties, the DOM offers a standard way to describe
+            HTML.
+        </p>
+
+    </div>
+    <div class="px-8 mt-6">
+        <h5 class="text-xl text-emerald-700 mb-2">
+            Question-2: How will you select HTML elements using DOM? Name the DOM methods.
+        </h5>
+        <p id="paragraph-id" class="paragraph-class">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div>
+            <h5 class="text-lime-700">Select HTML elements using DOM:</h5>
+            <p class="px-10 mt-2">
+                <!-- getElementById: This method is used to select an element with a specific ID. It returns a single element 
+                object.-->
+                myElementId = document.getElementById("paragraph-id");
+
+                <br>
+                <!-- getElementsByClassName: This method is used to select elements with a specific class name. It returns an 
+                HTMLCollection of element objects.-->
+                const myElementsName = document.getElementsByClassName("paragraph-class");
+                <br>
+
+                <!-- getElementsByTagName: This method is used to select elements with a specific tag name. It returns an 
+                HTMLCollection of element objects.-->
+                const myElementsTag = document.getElementsByTagName("p");
+                <br>
+
+                <!-- querySelector: This method is used to select the first element that matches a specific CSS selector. It 
+                returns a single element object.-->
+                const myElementSelector = document.querySelector("#paragraph-id");
+                <br>
+
+                <!-- querySelectorAll: This method is used to select all elements that match a specific CSS selector. It 
+                returns a NodeList of element objects.-->
+                const myElementsSelectorAll = document.querySelectorAll(".paragraph-class");
+            </p>
+        </div>
+        <div class="mt-4">
+            <h5 class="text-lime-700">Name of the DOM methods:</h5>
+            <p class="px-10 mb-4">
+                getElementById(): Selects an element with a specific ID attribute.
+                <br>
+                getElementsByClassName(): Selects elements with a specific class name.
+                <br>
+                getElementsByTagName(): Selects elements with a specific tag name.
+                <br>
+                querySelector(): Selects the first element that matches a specific CSS selector.
+                <br>
+                querySelectorAll(): Selects all elements that match a specific CSS selector.
+                <br>
+                createElement(): Creates a new element with the specified tag name.
+                <br>
+                appendChild(): Adds a new child node to an element.
+                <br>
+                removeChild(): Removes a child node from an element.
+                <br>
+                replaceChild(): Replaces a child node with a new node.
+                <br>
+                innerHTML(): Gets or sets the HTML content of an element.
+                <br>
+                style(): Gets or sets the CSS style of an element.
+                <br>
+                addEventListener(): Attaches an event listener to an element.
+                <br>
+                removeEventListener(): Removes an event listener from an element.
+                <br>
+                getAttribute(): Gets the value of a specific attribute of an element.
+                <br>
+                setAttribute(): Sets the value of a specific attribute of an element.
+            </p>
+        </div>
+    </div>
+    <div class="mt-4 px-8">
+        <h5 class="text-xl text-emerald-700">Question-3:What is event bubble?</h5>
+        <p class="text-lime-700 mt-2">
+            Event bubble:
+        <p class="px-10 mb-4">
+            When an event is triggered on a child element, it will propagate upward through its parent elements,
+            activating their corresponding event handlers as well. This process is known as event bubbling. If not
+            regulated, it can have unwanted repercussions. It can be handy for processing events on parent components
+            that contain numerous child elements with the same event handler.
+        </p>
+    </div>
+    <div class="mt-4 px-8">
+        <h5 class="text-xl text-emerald-700">Question-4: What is a call back function and why will you use it?</h5>
+        <p class="text-lime-700 mt-2">
+            call back function:
+        </p>
+        <p class="px-10 mb-4">
+            A callback function is one that receives another function as an input and is designed to be called after the
+            first function has finished its job. A callback function's main function is to enable the calling function
+            to carry out some logic after the called function has finished its job.
+        </p>
+        <p class="text-lime-700 mt-2">
+            I will use it because:
+        </p>
+        <p class="px-10 mb-4">
+            Callback functions are frequently used in asynchronous programming, event handling, and generalisation to
+            provide a means for a function to transfer the execution of certain logic to another function.
+        </p>
+    </div>
+</body>
+
+</html>
